@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Koulen&family=Kumar+One&family=Madimi+One&family=Oswald:wght@200..700&family=Rubik+Glitch+Pop&family=Titillium+Web:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:wght@100..900&family=Koulen&family=Kumar+One&family=Madimi+One&family=Oswald:wght@200..700&family=Rubik+Glitch+Pop&family=Titillium+Web:wght@200&display=swap');
+
+body {
+
+  margin: 0;
+
+  @media screen and (min-width: 1400px) {
+    .topBar {
+      display: flex;
+      flex-flow: row;
+      background: black;
+      padding: 0 6rem;
+
+
+      .logo {
+        display: flex;
+        flex-flow: row;
+        color: white;
+        font-family: "Koulen", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+        .d,
+        .e,
+        .r,
+        .y {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          width: 3rem;
+
+          .main-logo {
+            margin: 0;
+            font-size: 3rem;
+            height: 4rem;
+          }
+          .sub-logo {
+            margin: 0;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+
+    .title {
+      padding: 0 6rem;
+      font-family: "Abhaya Libre", serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 1.5rem;
+    }
+
+    .container {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      padding: 0 6rem;
+
+
+      .converter {
+        display: flex;
+        flex-flow: row;
+        height:30vh;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 2px 2px 20px #b3b3b3;
+        justify-content: space-between;
+        align-items: center;
+
+        .currency-selector {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 16rem;
+          border: 1px solid #9b9b9b;
+          border-radius: 5px;
+          padding: 0 1rem;
+
+          .country-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 6rem;
+
+            .flag-img {
+              height: 2rem;
+            }
+            h3 {
+              font-family: Arial, serif;
+            }
+          }
+
+          select {
+            border: none;
+            font-size: 1rem;
+            width: 9rem;
+          }
+        }
+
+        .swap-button {
+          cursor: pointer;
+          height: 1rem;
+          padding: 1rem;
+          border-radius: 2rem;
+
+          &:hover,
+          &:active {
+            background: #E5E5E5;
+          }
+        }
+
+        .input {
+          padding: 0 1rem;
+          margin-top: 2rem;
+          width: 16rem;
+          height: 3.6rem;
+          border: none;
+          border-bottom: 1px solid #8b8b8b;
+          background: #E5E5E5;
+          font-weight: normal;
+          font-size: 1.5rem;
+          color: black;
+        }
+
+        .frequent-buttons {
+          display: flex;
+
+          .button {
+            padding: 0.6rem;
+            margin: 0.5rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            cursor: pointer;
+
+            &:hover,
+            &:active {
+              background: #E5E5E5;
+            }
+          }
+        }
+      }
+
+      #notes {
+        width: 25rem;
+        height: 55vh;
+        padding: 2rem;
+        resize: none;
+        border-radius: 10px;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 1100px) and (max-width: 1400px) {
+
+    .topBar {
+      display: flex;
+      flex-flow: row;
+      background: black;
+      padding: 0 6rem;
+
+
+      .logo {
+        display: flex;
+        flex-flow: row;
+        color: white;
+        font-family: "Koulen", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+        .d,
+        .e,
+        .r,
+        .y {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          width: 3rem;
+
+          .main-logo {
+            margin: 0;
+            font-size: 3rem;
+            height: 4rem;
+          }
+          .sub-logo {
+            margin: 0;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+
+    .title {
+      padding: 0 6rem;
+      font-family: "Abhaya Libre", serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 1.5rem;
+    }
+
+    .container {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      padding: 0 6rem;
+
+      .converter {
+        display: flex;
+        flex-flow: row;
+        height:30vh;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 2px 2px 20px #b3b3b3;
+        justify-content: space-between;
+        align-items: center;
+
+        .currency-selector {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 16rem;
+          border: 1px solid #9b9b9b;
+          border-radius: 5px;
+          padding: 0 1rem;
+
+          .country-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 6rem;
+
+            .flag-img {
+              height: 2rem;
+            }
+            h3 {
+              font-family: Arial, serif;
+            }
+          }
+
+          select {
+            border: none;
+            font-size: 1rem;
+            width: 9rem;
+          }
+        }
+
+        .swap-button {
+          cursor: pointer;
+          height: 1rem;
+          padding: 1rem;
+          border-radius: 2rem;
+
+          &:hover,
+          &:active {
+            background: #E5E5E5;
+          }
+        }
+
+        .input {
+          padding: 0 1rem;
+          margin-top: 2rem;
+          width: 16rem;
+          height: 3.6rem;
+          border: none;
+          border-bottom: 1px solid #8b8b8b;
+          background: #E5E5E5;
+          font-weight: normal;
+          font-size: 1.5rem;
+          color: black;
+        }
+
+        .frequent-buttons {
+          display: flex;
+
+          .button {
+            padding: 0.6rem;
+            margin: 0.5rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            cursor: pointer;
+
+            &:hover,
+            &:active {
+              background: #E5E5E5;
+            }
+          }
+        }
+      }
+
+      #notes {
+        width: 30vw;
+        margin-left: 2rem;
+        height: 55vh;
+        padding: 2rem;
+        resize: none;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1099px) {
+    .topBar {
+      display: flex;
+      flex-flow: row;
+      background: black;
+      padding: 0 5vw;
+      width: 90vw;
+
+      .logo {
+        display: flex;
+        flex-flow: row;
+        color: white;
+        font-family: "Koulen", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+        .d,
+        .e,
+        .r,
+        .y {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          width: 3rem;
+
+          .main-logo {
+            margin: 0;
+            font-size: 3rem;
+            height: 4rem;
+          }
+          .sub-logo {
+            margin: 0;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+
+    .title {
+      padding: 0 5vw;
+      width: 90vw;
+      font-family: "Abhaya Libre", serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 1.5rem;
+    }
+
+    .container {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      padding: 0 5vw;
+
+      .converter {
+        display: flex;
+        flex-flow: row;
+        height: 30vh;
+        width: 90vw;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 2px 2px 20px #b3b3b3;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (orientation: landscape) {
+          height: 40vh;
+        }
+
+        .currency-selector {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 30vw;
+          border: 1px solid #9b9b9b;
+          border-radius: 5px;
+          padding: 0 1rem;
+
+          .country-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 5rem;
+
+            .flag-img {
+              height: 1.5rem;
+            }
+            h3 {
+              font-family: Arial, serif;
+            }
+          }
+
+          select {
+            border: none;
+            font-size: 1rem;
+            width: 18vw;
+          }
+        }
+
+        .swap-button {
+          cursor: pointer;
+          height: 1rem;
+          padding: 1rem;
+          border-radius: 2rem;
+        }
+
+        .input {
+          padding: 0 1rem;
+          margin-top: 2rem;
+          width: 30vw;
+          height: 3.6rem;
+          border: none;
+          border-bottom: 1px solid #8b8b8b;
+          background: #E5E5E5;
+          font-weight: normal;
+          font-size: 1.5rem;
+          color: black;
+        }
+
+        .frequent-buttons {
+          display: flex;
+
+          .button {
+            padding: 0.6rem;
+            margin: 0.5rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            cursor: pointer;
+          }
+        }
+      }
+
+      #notes {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (min-width: 200px) and (max-width: 699px) {
+    .topBar {
+      display: flex;
+      flex-flow: row;
+      background: black;
+      padding: 0 10vw;
+
+      .logo {
+        display: flex;
+        flex-flow: row;
+        color: white;
+        font-family: "Koulen", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+        .d,
+        .e,
+        .r,
+        .y {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          width: 3rem;
+
+          .main-logo {
+            margin: 0;
+            font-size: 3rem;
+            height: 4rem;
+          }
+          .sub-logo {
+            margin: 0;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+
+    .title {
+      padding: 0 10vw;
+      font-family: "Abhaya Libre", serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 1rem;
+    }
+
+    .container {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      padding: 0 10vw;
+
+      .converter {
+        display: flex;
+        flex-flow: column;
+        //height: 60vh;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 2px 2px 20px #b3b3b3;
+        justify-content: space-between;
+        align-items: center;
+
+        .currency-selector {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border: 1px solid #9b9b9b;
+          border-radius: 5px;
+          padding: 0 1rem;
+
+          .country-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 5rem;
+
+            .flag-img {
+              height: 1.5rem;
+            }
+            h3 {
+              font-family: Arial, serif;
+            }
+          }
+
+          select {
+            border: none;
+            font-size: 1rem;
+            width: 35vw;
+          }
+        }
+
+        .swap-button {
+          cursor: pointer;
+          height: 1rem;
+          padding: 1rem;
+          border-radius: 2rem;
+        }
+
+        .input {
+          padding: 0 1rem;
+          margin-top: 2rem;
+          height: 3.6rem;
+          width: 60vw;
+          border: none;
+          border-bottom: 1px solid #8b8b8b;
+          background: #E5E5E5;
+          font-weight: normal;
+          font-size: 1.5rem;
+          color: black;
+        }
+
+        .frequent-buttons {
+          display: flex;
+
+          .button {
+            padding: 0.6rem;
+            margin: 0.5rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            cursor: pointer;
+          }
+        }
+      }
+
+      #notes {
+        display: none;
+      }
+    }
+  }
+
+
+}
