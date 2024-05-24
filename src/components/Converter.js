@@ -47,7 +47,7 @@ function Converter() {
                 <FrequentCurrencies buttons={fromButtonData} isFrom={true} setFromSelectedCurrency={setFromSelectedCurrency} />
             </div>
 
-            <img className={'swap-button'} src='./SwapButton.svg' alt="Swap Button" onClick={swap}/>
+            <img className={'swap-button'} src='https://raw.githubusercontent.com/Alpha-911/currency_converter/dda529ae38294ee55059630f6a55f3d03bd2cc80/src/components/SwapButton.svg' alt="Swap Button" onClick={swap}/>
 
             <div className="output-currency">
                 <CurrencySelector isFrom={false} toSelectedCurrency={toSelectedCurrency} setToCurrencySelector={setToSelectedCurrency} />
